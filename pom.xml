@@ -80,7 +80,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>vinsdocker/containertest</repository>
+					<repository>vishvajafaldesai/selenium</repository>
 					<tag>demo</tag>
 				</configuration>
 			</plugin>
