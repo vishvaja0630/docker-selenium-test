@@ -19,27 +19,13 @@ public class SearchTest extends BaseTest {
         google = new SearchPage(driver);
     }
 
-    @Test(dataProvider = "search-keywords")
-    public void googleTest(String searchKeyword) {
+    @Test()
+    public void googleTest() {
         google.goTo();
-        google.searchFor(searchKeyword);
-        Assert.assertTrue(google.getResults().size()>0);
+        Assert.assertTrue(google.checkTitle("G"));
+        
+   
     }
    
-    @DataProvider(name = "search-keywords")
-    public static Object[][] credentials() {
-          return new Object[][] {
-              { "test automation guru" },
-              { "selenium webdriver" },
-              { "dockerized selenium grid" },
-              { "test automation blog" },
-              { "jmeter docker" } ,
-              { "test automation guru" },
-              { "selenium webdriver" },
-              { "dockerized selenium grid" },
-              { "test automation blog" },
-              { "jmeter docker" }               
-          };
-    }
 
 }
