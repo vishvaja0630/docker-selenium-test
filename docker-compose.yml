@@ -19,14 +19,6 @@ services:
       - chrome
     environment:
       - MODULE=search-module.xml
-      - BROWSER=firefox
-      - SELENIUM_HUB=selenium-hub
-  order-module:
-    image: vishvajafaldesai/selenium
-    container_name: order-module
-    depends_on:
-      - chrome
-    environment:
-      - MODULE=order-module.xml
       - BROWSER=chrome
       - SELENIUM_HUB=selenium-hub
+  
