@@ -9,11 +9,10 @@ services:
     image: selenium/node-chrome
     depends_on:
       - selenium-hub
-    ports:
-      - "5900:5900"
     environment:
       - HUB_PORT_4444_TCP_ADDR=selenium-hub
       - HUB_PORT_4444_TCP_PORT=4444
+      - JAVA_OPTS=-Dwebdriver.chrome.whitelistedIps=
   search-module:
     image: vishvajafaldesai/selenium
     container_name: search-module
