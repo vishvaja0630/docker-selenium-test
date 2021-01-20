@@ -21,17 +21,17 @@ public class SearchPage {
         this.wait = new WebDriverWait(driver, 30);
     }
 
-    /*public void goTo() {
+    public void goTo() {
         this.driver.get("https://www.google.com");
         System.out.println("Browser launched and navigated to Google");
     }
     
-    public Boolean checkTitle(String expectedTitle){
+    */public Boolean checkTitle(String expectedTitle){
        return driver.getTitle().contains(expectedTitle);
    }*/
   
   public String checkTitle(){
-  driver.navigate().to("https://www.google.com");
+  //driver.navigate().to("https://www.google.com");
   String pageTitle = driver.getTitle();
   System.out.println(pageTitle);
   return pageTitle;
