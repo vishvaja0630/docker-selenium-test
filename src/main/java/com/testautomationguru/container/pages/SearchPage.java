@@ -37,7 +37,5 @@ public class SearchPage {
   return pageTitle;
   }
                        
-  driver.close();
-  driver.quit();
 
 }
