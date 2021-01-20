@@ -19,19 +19,22 @@ public class SearchTest extends BaseTest {
         google = new SearchPage(driver);
     }
 
-   /*@Test()
+   @Test()
     public void googleTest() {
         google.goTo();
-        Assert.assertTrue(google.checkTitle("g"));
-        
-   
-    }*/
-    @Test()
-    public void googleTest() {
         if(google.checkTitle().equals("Google"))
         Assert.assertTrue(true);
         else
         Assert.assertTrue(false);
+        
+   
+    }
+    /*@Test()
+    public void googleTest() {
+        if(google.checkTitle().equals("Google"))
+        Assert.assertTrue(true);
+        else
+        Assert.assertTrue(false);*/
         
    
     }
