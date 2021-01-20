@@ -38,6 +38,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown() throws InterruptedException {
+        drive.close();
         driver.quit();
     }  
 }
