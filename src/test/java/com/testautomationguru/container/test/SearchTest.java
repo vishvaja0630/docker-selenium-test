@@ -34,10 +34,10 @@ public class SearchTest extends BaseTest {
         if(google.checkTitle().equals("Google"))
         Assert.assertTrue(true);
         else
-        Assert.assertTrue(false);*/
+        Assert.assertTrue(false);
         
    
-    }
+    }*/
     
     
    
