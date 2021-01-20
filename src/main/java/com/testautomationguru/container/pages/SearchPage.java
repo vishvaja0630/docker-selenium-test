@@ -26,7 +26,7 @@ public class SearchPage {
         System.out.println("Browser launched and navigated to Google");
     }
     
-    */public Boolean checkTitle(String expectedTitle){
+    /*public Boolean checkTitle(String expectedTitle){
        return driver.getTitle().contains(expectedTitle);
    }*/
   
